@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prana.snehitaapp.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/More"
+        android:layout_width="184dp"
+        android:layout_height="251dp"
+        android:text="More"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="2dp" />
+
+    <Button
+        android:id="@+id/Scales"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Scales"
+        app:layout_constraintRight_toLeftOf="@+id/More"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="2dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/More" />
+
+    <Button
+        android:id="@+id/Chords"
+        android:layout_width="0dp"
+        android:layout_height="257dp"
+        android:text="Chords"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="3dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Scales" />
+
+    <Button
+        android:id="@+id/Basic"
+        android:layout_width="0dp"
+        android:layout_height="257dp"
+        android:text=""
+
+        android:background="@drawable/basics"
+        android:padding="16dp"
+        android:drawablePadding="40dp"
+        android:paddingLeft="50dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/Scales"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Chords"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Scales" />
+</android.support.constraint.ConstraintLayout>
